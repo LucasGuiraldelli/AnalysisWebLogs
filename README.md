@@ -66,7 +66,7 @@ Todo arquivo dentro de cada camada foi salvo como **delta** a fim de facilitar o
 
 ## Justificativa
 
-A fim de facilitar o processo de consultas nos dados dentro do Databricks, optei por uma abordagem direta para salvar o arquivo de logs dentro da plataforma. Para isso, foi necessário criar uma tabela para que as [Limitações](#limitações) fosse superada. A criação da tabela foi feita da seguinte forma: ao importar o arquivo, passei todas as informações para uma só coluna, sendo ela string. Dentro dessa etapa, o único formato aceito de dados é o .csv, que não era o caso, mas para prosseguir, assumi o separador como um caractere inexistente nos dados ('^'). <br>
+A fim de facilitar o processo de consultas nos dados dentro do Databricks, optei por uma abordagem direta para salvar o arquivo de logs dentro da plataforma. Para isso, foi necessário criar uma tabela para que as [Limitações](#limitações) fossem superadas. A criação da tabela foi feita da seguinte forma: ao importar o arquivo, passei todas as informações para uma só coluna, sendo ela string. Dentro dessa etapa, o único formato aceito de dados é o .csv, que não era o caso, mas para prosseguir, assumi o separador como um caractere inexistente nos dados ('^'). <br>
 Criando assim a tabela dentro do Databricks, utilizando o DBFS (Databricks File System). <br>
 
 ## Limitações
